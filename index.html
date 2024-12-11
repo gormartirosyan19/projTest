@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">John</td>
+                <td colspan="2">Doe</td>
+                <!-- <td>27</td> -->
+            </tr>
+            <tr>
+                <!-- <td>John</td> -->
+                <td>Gates</td>
+                <td>77</td>
+            </tr>
+            <tr>
+                <td>Steve</td>
+                <td>Jobs</td>
+                <td>49</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">3 users</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!--օրենքներ՝ 
+       table թեգի մեջ կարող է լինել միայն thead,tbody,tfoot
+        կարող ենք չունենալ thead կամ tfoot, բայց tbody-ն պարտադիր է
+        thead,tbody,tfoot - ի մեջ կարող է լինել միայն tr
+
+        տողի մեջ (tr) կարող է լինել միայն th կամ td
+        tr - տող
+        td-ի մեջ կարող են գրել ամեն ինչ
+        th-ի մեջ գրում ենք տվյալ սյան վերնագիրը
+    -->
+
+    <form action="#" method="get">
+        <div>
+            <label>
+                First name
+                <input type="text" name="fName">
+            </label>
+        </div>
+        <div>
+            <label>
+                Surname
+                <input type="text" name="surname">
+            </label>
+        </div>
+        <div>
+            <label>
+                Upload avatar
+                <input type="file" name="image">
+            </label>
+        </div>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
